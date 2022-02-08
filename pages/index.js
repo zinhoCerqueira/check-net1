@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Menu from '../components/Menu'
 
 
 export default function Home() {
@@ -12,8 +11,6 @@ export default function Home() {
         <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Menu/>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -62,7 +59,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={100} height={20} />
           </span>
