@@ -1,13 +1,18 @@
 .navbar{
   display: flex;
-  background-color: rgb(224, 214, 194);
-  padding: 40px;
+  background-color: rgb(255, 246, 246);
+  padding: 25px;
   list-style: none;
+  font-size:large;
+}
+
+.lista{
+  margin-left: 100px;
 }
 
 .navbar a{
   color: black;
-  margin-right: 10em;
+  margin-right: 6em;
   text-decoration:none;
   transition: .3s;
 }
@@ -15,6 +20,3 @@
 .navbar a:hover{
   color: rgb(219, 84, 84);
 }
-
-#otis 
-li { list-style-type: circle; }

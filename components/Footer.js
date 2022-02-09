@@ -1,5 +1,12 @@
-export default function Footer(){
+import styles from '../styles/Footer.module.css'
+
+export default function Footer() {
   return (
-    <p>Check Net LTDA, desde sempre.</p>
+    <>
+      <footer className={styles.footer}>
+        <span>Check Net LTDA &copy;, desde sempre.</span>
+      </footer>
+    </>
+
   )
 }
