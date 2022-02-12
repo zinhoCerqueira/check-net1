@@ -28,3 +28,41 @@
   font-size: 30px;
   text-align: justify;
 }
+
+.present3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+}
+
+.apresentation{
+  display: flex;
+  background-color: #FFF6F6;
+  width: 50%;
+  height: 35vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.description{
+  width: 50%;
+  height: 35vh;
+  background-color: #DB0000;
+  color: #FFF6F6;
+  font-size: 15px;
+}
+
+.description p {
+  margin: 50px;
+}
+
+.card{
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 20vh;
+  height: 20vh;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  
+}

@@ -2,15 +2,15 @@
   display: flex;
   background-color: #FFF6F6;
   padding: 25px;
-  list-style: none;
   font-size:large;
-  border-bottom: 1px solid #ac8484;
+  border-bottom: 2px solid #ac8484;
 }
 
 .lista{
   display: flex;
-  margin-top: 13px;
-  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8em;
 }
 
 .navbar a{
@@ -26,7 +26,27 @@
 
 .listaButtons{
   display: flex;
-  margin-top: 8px;
-  margin-left: 490px;
-  list-style: none;
+  margin-left: 24vw;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.navbar button{
+
+  width: 220px;
+  height: 45px;
+  color: red;
+  background: #FFFFFF;
+  border-radius: 58px;
+  border: 1px solid #ac8484;
+  font-size: large;
+  transition-duration: 0.4s;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+
+
+}
+
+.ajuste{
+  margin-left: 2vw;
 }
