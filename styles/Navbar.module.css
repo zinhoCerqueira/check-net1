@@ -1,12 +1,15 @@
 .navbar{
   display: flex;
-  background-color: rgb(255, 246, 246);
+  background-color: #FFF6F6;
   padding: 25px;
   list-style: none;
   font-size:large;
+  border-bottom: 1px solid #ac8484;
 }
 
 .lista{
+  display: flex;
+  margin-top: 13px;
   margin-left: 100px;
 }
 
@@ -19,4 +22,11 @@
 
 .navbar a:hover{
   color: rgb(219, 84, 84);
+}
+
+.listaButtons{
+  display: flex;
+  margin-top: 8px;
+  margin-left: 490px;
+  list-style: none;
 }
