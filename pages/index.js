@@ -10,6 +10,7 @@ export default function Home() {
         <title>RangoCheck</title>
         <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></link>
       </Head>
 
       <div className={styles.container}>
@@ -20,6 +21,14 @@ export default function Home() {
           <p className={styles.present2}>
             <b><i>Preço</i></b> e <b><i>Qualidade</i></b> em apenas um lugar.
           </p>
+          <div>
+            <button type="button" className={styles.buttonApresentation}>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Nossos produtos
+            </button>
+
+            
+          </div>
         </div>
 
         <div className={styles.divPresent2}>
