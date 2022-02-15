@@ -9,7 +9,6 @@
   height: 300px;
   width: 400px;
   margin-top: 6em;
-  border: 2px solid #9C4F4F;
 }
 
 .divPresent2{ 
@@ -41,6 +40,7 @@
 
 .apresentation{
   display: flex;
+  flex-direction: row;
   background-color: #FFF6F6;
   width: 50%;
   height: 35vh;
@@ -50,24 +50,32 @@
 
 .description{
   display: flex;
+  text-align: justify;
   width: 50%;
   height: 35vh;
-  background-color: #DB0000;
+  background-color: #EB311F;
   color: #FFF6F6;
   font-size: 15px;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
+  padding: 3vh;
+  box-sizing: border-box;
 }
 
 .card{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
-  width: 20vh;
+  width: 17vh;
   height: 20vh;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-  
+  padding: 10px;
 }
+
+
 
 .buttonApresentation{
 
@@ -75,13 +83,32 @@
   width: 245px;
   height: 45px;
   color: white;
-  background: red;
+  background: #EB311F;
   border-radius: 58px;
   border: 1px solid #ac8484;
   font-size: large;
   transition-duration: 0.4s;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 
+}
+
+.imgCard{
+  border-radius: 50%;
+  top: 5vh;
+  position: relative;
+
+}
+
+.pessoaNome{
+  color: #EB311F;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+.pessoaCargo{
+  color: #000000;
+  font-size: small;
+  font-weight: bold;
 }
 
 

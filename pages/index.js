@@ -2,8 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+const fundadores = [
+
+  { nome: "Jader Cerqueira", foto: "https://github.com/zinhoCerqueira.png" },
+  { nome: "Vitor Souza", foto: "https://github.com/viubis.png" },
+  { nome: "Daniel Santana", foto: "https://github.com/danielsantana77.png" },
+  { nome: "Thiago Menezes", foto: "https://github.com/thigaz.png" }
+];
+
+
 
 export default function Home() {
+
   return (
     <div>
       <Head>
@@ -23,11 +33,11 @@ export default function Home() {
           </p>
           <div>
             <button type="button" className={styles.buttonApresentation}>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass"></i> &nbsp;
               Nossos produtos
             </button>
 
-            
+
           </div>
         </div>
 
@@ -42,27 +52,25 @@ export default function Home() {
 
       <div className={styles.present3}>
         <div className={styles.apresentation}>
+          {fundadores.map((pessoa) => (
+            <div className={styles.card}>
+              <Image className={styles.imgCard}
+                alt="Foto do membro fundador"
+                src={pessoa.foto}
+                width="75px"
+                height="75px"
+                
+              />
+              <span className={styles.pessoaNome}> {pessoa.nome} </span>
+              <span className={styles.pessoaCargo}> Co-Fundador </span>
+            </div>
 
-          <div className={styles.card}>
-            eqweqeqeqwqw
-          </div>
-
-          <div className={styles.card}>
-            wqeqeeqeq
-          </div>
-
-          <div className={styles.card}>
-            eqwe
-          </div>
-
+          ))}
         </div>
 
+
         <div className={styles.description}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <br></br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
 
       </div>

@@ -2,7 +2,7 @@
   background-color: #E2DCDC;
   display: flex;
   justify-content: center;
-  border-top: 2px solid #ac8484;
+  border-top: 2px solid #EB311F;
 
 }
 
@@ -14,7 +14,7 @@
 }
 
 .footerDiv1 h2{
-  color: red;
+  color: #EB311F;
 }
 
 .footerDiv1 h5{
@@ -28,7 +28,7 @@
 }
 
 .footerDiv2 h2{
-  color: red;
+  color: #EB311F;
 }
 
 .footerDiv2 h5{

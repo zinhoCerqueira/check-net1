@@ -1,9 +1,10 @@
 .navbar{
   display: flex;
-  background-color: #FFF6F6;
+  background-color: #F5F5F5;
   padding: 25px;
   font-size:large;
-  border-bottom: 2px solid #ac8484;
+  font-weight: bold;
+  border-bottom: 2px solid #EB311F;
 }
 
 .lista{
@@ -36,11 +37,12 @@
 
   width: 220px;
   height: 45px;
-  color: red;
+  color: #EB311F;
   background: #FFFFFF;
   border-radius: 58px;
   border: 1px solid #ac8484;
   font-size: large;
+  font-weight: bold;
   transition-duration: 0.4s;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 
