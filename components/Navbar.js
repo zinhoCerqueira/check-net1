@@ -13,15 +13,17 @@ export default function Navbar() {
           <a>Meu Carrinho</a>
         </Link>
         <Link href='/sobre'>
-          <a>Serviços</a>
+          <a>Sobre</a>
         </Link>
 
       </div>
 
       <div className={styles.listaButtons}>
 
-        <button type="button">Login</button>
-        <button className = {styles.ajuste} type="button">Cadastre-se</button>
+        <div className={styles.wrapper}>
+          <button >Login</button>
+          <button className={styles.ajuste}>Cadastre-se</button>
+        </div>
 
       </div>
 

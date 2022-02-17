@@ -58,7 +58,6 @@
   font-size: 15px;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
   padding: 3vh;
   box-sizing: border-box;
 }
@@ -73,23 +72,6 @@
   height: 20vh;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
   padding: 10px;
-}
-
-
-
-.buttonApresentation{
-
-  margin-top: 3vh;
-  width: 245px;
-  height: 45px;
-  color: white;
-  background: #EB311F;
-  border-radius: 58px;
-  border: 1px solid #ac8484;
-  font-size: large;
-  transition-duration: 0.4s;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-
 }
 
 .imgCard{
@@ -111,4 +93,58 @@
   font-weight: bold;
 }
 
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0%, -0%);
+}
 
+.wrapper button {
+
+  margin-top: 3vh;
+  width: 240px;
+  height: 45px;
+  text-align: center;
+  border-radius: 58px;
+  border: 2px solid #EB311F;
+  color: #EB311F;
+  font-size: large;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: all .35s;
+  font-weight:bold ;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.wrapper button:before,
+.wrapper button:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #EB311F;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.wrapper button :before{
+  opacity: .5;
+}
+
+.wrapper button :after{
+  transition-delay: .2s;
+}
+
+.wrapper button :hover{
+  color: black;
+  cursor: pointer;
+}
+
+.wrapper button :hover:before,
+.wrapper button :hover:after{
+  top:0;
+}

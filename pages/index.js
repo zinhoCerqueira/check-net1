@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></link>
       </Head>
 
-      <Navbar/>
+      <Navbar />
 
       <div className={styles.container}>
         <div className={styles.divPresent1}>
@@ -34,13 +34,12 @@ export default function Home() {
           <p className={styles.present2}>
             <b><i>Preço</i></b> e <b><i>Qualidade</i></b> em apenas um lugar.
           </p>
-          <div>
-            <button type="button" className={styles.buttonApresentation}>
+
+          <div className={styles.wrapper}>
+            <button>
               <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
               Nossos produtos
             </button>
-
-
           </div>
         </div>
 
@@ -62,7 +61,7 @@ export default function Home() {
                 src={pessoa.foto}
                 width="75px"
                 height="75px"
-                
+
               />
               <span className={styles.pessoaNome}> {pessoa.nome} </span>
               <span className={styles.pessoaCargo}> Co-Fundador </span>
