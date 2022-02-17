@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css'
 
 const fundadores = [
@@ -23,6 +24,8 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></link>
       </Head>
 
+      <Navbar/>
+
       <div className={styles.container}>
         <div className={styles.divPresent1}>
           <p className={styles.present1}>
@@ -33,7 +36,7 @@ export default function Home() {
           </p>
           <div>
             <button type="button" className={styles.buttonApresentation}>
-              <i class="fa-solid fa-magnifying-glass"></i> &nbsp;
+              <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
               Nossos produtos
             </button>
 

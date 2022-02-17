@@ -7,9 +7,9 @@ export default function Navbar() {
       <div className={styles.lista}>
 
         <Link href='/'>
-          <a>Promoções</a>
+          <a>Home</a>
         </Link>
-        <Link href='/produtos'>
+        <Link href='/carrinho'>
           <a>Meu Carrinho</a>
         </Link>
         <Link href='/sobre'>
