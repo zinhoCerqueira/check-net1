@@ -55,7 +55,8 @@ export default function Home() {
       <div className={styles.present3}>
         <div className={styles.apresentation}>
           {fundadores.map((pessoa) => (
-            <div className={styles.card}>
+            <div key={pessoa.nome} className={styles.card}>
+
               <Image className={styles.imgCard}
                 alt="Foto do membro fundador"
                 src={pessoa.foto}
