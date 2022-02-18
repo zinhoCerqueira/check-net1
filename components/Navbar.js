@@ -18,14 +18,12 @@ export default function Navbar() {
 
       </div>
 
-      <div className={styles.listaButtons}>
-
-        <div className={styles.wrapper}>
-          <button >Login</button>
-          <button className={styles.ajuste}>Cadastre-se</button>
-        </div>
-
+      <div className={styles.listButton}>
+        <button >Login</button>
+        <button className={styles.ajuste}>Cadastre-se</button>
       </div>
+
+
 
     </div>
   )

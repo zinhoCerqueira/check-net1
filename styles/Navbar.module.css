@@ -33,7 +33,8 @@
 
 }
 
-.wrapper{
+.listButton{
+  margin-left: 24vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +68,7 @@
   left: 0;
   background: #EB311F;
   z-index: -1;
-  transition: all .35s;
+  transition: all .30s;
 }
 
 .navbar button:before{

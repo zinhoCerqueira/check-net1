@@ -34,14 +34,12 @@ export default function Home() {
           <p className={styles.present2}>
             <b><i>Preço</i></b> e <b><i>Qualidade</i></b> em apenas um lugar.
           </p>
-
-          <div className={styles.wrapper}>
-            <button>
+            <button className={styles.styleButton}>
               <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
               Nossos produtos
             </button>
           </div>
-        </div>
+       
 
         <div className={styles.divPresent2}>
           <Image
@@ -54,20 +52,17 @@ export default function Home() {
 
       <div className={styles.present3}>
         <div className={styles.apresentation}>
-          {fundadores.map((pessoa) => (
-            <div key={pessoa.nome} className={styles.card}>
-
+          {fundadores.map((pessoa, index) => (
+            <div key={index} className={styles.card}>
               <Image className={styles.imgCard}
                 alt="Foto do membro fundador"
                 src={pessoa.foto}
                 width="75px"
                 height="75px"
-
               />
               <span className={styles.pessoaNome}> {pessoa.nome} </span>
               <span className={styles.pessoaCargo}> Co-Fundador </span>
             </div>
-
           ))}
         </div>
 

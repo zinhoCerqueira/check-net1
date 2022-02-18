@@ -93,14 +93,14 @@
   font-weight: bold;
 }
 
-.wrapper{
+.styleButton{
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translate(-0%, -0%);
 }
 
-.wrapper button {
+.styleButton{
 
   margin-top: 3vh;
   width: 240px;
@@ -108,43 +108,43 @@
   text-align: center;
   border-radius: 58px;
   border: 2px solid #EB311F;
-  color: #EB311F;
+  color: black;
   font-size: large;
   position: relative;
   overflow: hidden;
-  background: transparent;
+  background-color: #EB311F;
   transition: all .35s;
   font-weight:bold ;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
-.wrapper button:before,
-.wrapper button:after{
+.styleButton:before,
+.styleButton:after{
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   top: -100%;
   left: 0;
-  background: #EB311F;
+  background: white;
   z-index: -1;
   transition: all .35s;
 }
 
-.wrapper button :before{
+.styleButton:before{
   opacity: .5;
 }
 
-.wrapper button :after{
+.styleButton :after{
   transition-delay: .2s;
 }
 
-.wrapper button :hover{
-  color: black;
+.styleButton :hover{
+  color: #EB311F;
   cursor: pointer;
 }
 
-.wrapper button :hover:before,
-.wrapper button :hover:after{
+.styleButton:hover:before,
+.styleButton:hover:after{
   top:0;
 }
