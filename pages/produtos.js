@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import styles from '../styles/Produtos.module.css'
+import Link from 'next/link'
 
 export default function Produtos() {
   return (
