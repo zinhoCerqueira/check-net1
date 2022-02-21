@@ -1,5 +1,5 @@
 import styles from '../styles/Footer.module.css'
-
+import Script from 'next/script'
 
 export default function Footer() {
 
@@ -19,7 +19,7 @@ export default function Footer() {
             <h3><i className="fa-brands fa-twitter"></i></h3>
           </div>
           
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+          <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></Script>
           
           <h5>
             Copywright 2022, by Checknet,
