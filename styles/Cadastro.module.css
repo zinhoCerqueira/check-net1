@@ -1,0 +1,107 @@
+.container h2{
+  font-size: 40px;
+}
+
+.container span{
+  color: #EB311F;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  flex-direction: column;
+}
+
+.formContainer{
+  transform: translate(-0%, -0%);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  border: 2px solid #EB311F;
+  border-radius: 18px;
+  padding: 2vh 3vh;
+}
+
+.control{
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  border-radius: 58px;
+  border: 2px solid #EB311F;
+  color: #EB311F;
+  overflow: hidden;
+  background: white;
+  font-weight:bold ;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.label{
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.checkBox{
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.formContainer button{
+
+  margin: 2vh;
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  border-radius: 58px;
+  border: 2px solid #EB311F;
+  color: #EB311F;
+  font-size: large;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: all .35s;
+  font-weight:bold ;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.formContainer button:before,
+.formContainer button:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #EB311F;
+  z-index: -1;
+  transition: all .30s;
+}
+
+.formContainer button:before{
+  opacity: .5;
+}
+
+.formContainer button:after{
+  transition-delay: .2s;
+}
+
+.formContainer button:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.formContainer button:hover:before,
+.formContainer button:hover:after{
+  top:0;
+}

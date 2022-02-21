@@ -1,0 +1,28 @@
+.apresentation1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.pt1Apresentation{
+  width: 40%;
+  height: 10vh;
+  border-right: 1px solid black;
+}
+
+.pt2Apresentation{
+  width: 60%;
+  font-size: 18px;
+  padding: 3vh;
+  text-align: justify;
+  font-weight: normal;
+}
+
+.titulo{
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #EB311F;
+  margin-top: -10px;
+}

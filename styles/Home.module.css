@@ -18,7 +18,7 @@
 .present1{
   margin: 0;
   padding: 0;
-  color: #9C4F4F;
+  color: black;
   font-weight: bolder;
   text-align: justify;
   font-size: 17px;
@@ -41,11 +41,12 @@
 .apresentation{
   display: flex;
   flex-direction: row;
-  background-color: #FFF6F6;
+  background-color: #EB311F;
   width: 50%;
   height: 35vh;
   align-items: center;
   justify-content: space-evenly;
+  border-right: 1px solid white;
 }
 
 .description{
@@ -108,7 +109,7 @@
   text-align: center;
   border-radius: 58px;
   border: 2px solid #EB311F;
-  color: black;
+  color: white;
   font-size: large;
   position: relative;
   overflow: hidden;
@@ -135,11 +136,11 @@
   opacity: .5;
 }
 
-.styleButton :after{
+.styleButton:after{
   transition-delay: .2s;
 }
 
-.styleButton :hover{
+.styleButton:hover{
   color: #EB311F;
   cursor: pointer;
 }

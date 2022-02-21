@@ -2,29 +2,40 @@ import Link from 'next/Link'
 import styles from '../styles/Navbar.module.css'
 
 export default function Navbar() {
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className={styles.navbar}>
       <div className={styles.lista}>
 
-        <Link href='/'>
+        <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href='/carrinho'>
+        <Link href="/produtos">
+          <a>Produtos</a>
+        </Link>
+        <Link href="/carrinho">
           <a>Meu Carrinho</a>
         </Link>
-        <Link href='/sobre'>
+        <Link href="/sobre">
           <a>Sobre</a>
         </Link>
 
       </div>
 
       <div className={styles.listButton}>
-        <button >Login</button>
-        <button className={styles.ajuste}>Cadastre-se</button>
+        <button onClick={handleShow}>Login</button>
+        <Link href="/cadastro">
+          <button className={styles.ajuste}>Cadastre-se</button>
+        </Link>
+
       </div>
 
 
-
     </div>
+
+
   )
 }
