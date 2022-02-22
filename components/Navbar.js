@@ -9,6 +9,7 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbar}>
+
       <div className={styles.lista}>
         <Link href="/">
           <a>Home</a>
@@ -22,7 +23,6 @@ export default function Navbar() {
         <Link href="/sobre">
           <a>Sobre</a>
         </Link>
-
       </div>
 
       <div className={styles.listButton}>
@@ -30,7 +30,6 @@ export default function Navbar() {
         <Link href="/cadastro">
           <button className={styles.ajuste}>Cadastre-se</button>
         </Link>
-
       </div>
 
 

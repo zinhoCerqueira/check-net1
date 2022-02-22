@@ -1,11 +1,10 @@
 .navbar{
-  display: inline-flex;
+  display: flex;
   background-color: #F5F5F5;
   padding: 25px;
   font-size:large;
   font-weight: bold;
   border-bottom: 2px solid #EB311F;
-  width: 100%;
   height: 3vh;
 }
 
@@ -13,7 +12,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 10vh;
+  margin-left: 8vh;
+  width: 45%;
+  border: 1px solid aqua;
 }
 
 .navbar a{
@@ -32,6 +33,9 @@
   justify-content: flex-end;
   align-items: center;
   transform: translate(-0%, -0%);
+  border: 1px solid aqua;
+  width: 60%;
+  max-width: 980px;
 }
 
 .navbar button{

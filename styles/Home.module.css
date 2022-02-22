@@ -6,28 +6,25 @@
 .divPresent1{ 
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 400px;
-  margin-top: 6em;
+  align-items: center;
+  height: 30.0rem;
+  width: 44.0rem;
+  margin-top: 6rem;
+  margin-right: 7rem;
 }
 
-.divPresent2{ 
-  margin-left: 3em; 
-}
 
 .present1{
-  margin: 0;
-  padding: 0;
   color: black;
   font-weight: bolder;
   text-align: justify;
-  font-size: 17px;
+  font-size: 2.0rem;
 }
 
 .present2{
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 3.5rem;
   text-align: justify;
 }
 
@@ -56,7 +53,7 @@
   height: 35vh;
   background-color: #EB311F;
   color: #FFF6F6;
-  font-size: 15px;
+  font-size: 1.7rem;
   justify-content: center;
   align-items: center;
   padding: 3vh;
@@ -69,17 +66,19 @@
   flex-direction: column;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
-  width: 17vh;
-  height: 20vh;
+  width: 15.0rem;
+  height: 19.0rem;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-  padding: 10px;
+  padding: 0.8rem;
 }
 
 .imgCard{
   border-radius: 50%;
-  top: 5vh;
-  position: relative;
+  margin-top: 3vh;
+}
 
+.positionImage{
+  margin-top: 2.2rem;
 }
 
 .pessoaNome{
@@ -104,8 +103,8 @@
 .styleButton{
 
   margin-top: 3vh;
-  width: 240px;
-  height: 45px;
+  width: 29.0rem;
+  height: 4.5rem;
   text-align: center;
   border-radius: 58px;
   border: 2px solid #EB311F;

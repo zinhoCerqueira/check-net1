@@ -27,19 +27,21 @@ export default function Home() {
       <Navbar />
 
       <div className={styles.container}>
+
         <div className={styles.divPresent1}>
+
           <p className={styles.present1}>
             Eleito melhor serviço em 2017, 2020, 2021 pelo DataFake.
           </p>
           <p className={styles.present2}>
             <b><i>Preço</i></b> e <b><i>Qualidade</i></b> em apenas um lugar.
           </p>
-            <button className={styles.styleButton}>
-              <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
-              Nossos produtos
-            </button>
-          </div>
-       
+          <button className={styles.styleButton}>
+            <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
+            Nossos produtos
+          </button>
+        </div>
+
 
         <div className={styles.divPresent2}>
           <Image
@@ -51,19 +53,23 @@ export default function Home() {
       </div>
 
       <div className={styles.present3}>
+
         <div className={styles.apresentation}>
           {fundadores.map((pessoa, index) => (
             <div key={index} className={styles.card}>
-              <Image className={styles.imgCard}
-                alt="Foto do membro fundador"
-                src={pessoa.foto}
-                width="75px"
-                height="75px"
-              />
+              <div className={styles.positionImage}>
+                <Image className={styles.imgCard}
+                  alt="Foto do membro fundador"
+                  src={pessoa.foto}
+                  width="75px"
+                  height="75px"
+                /></div>
+
               <span className={styles.pessoaNome}> {pessoa.nome} </span>
               <span className={styles.pessoaCargo}> Co-Fundador </span>
             </div>
           ))}
+
         </div>
 
 
