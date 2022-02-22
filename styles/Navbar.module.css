@@ -1,22 +1,24 @@
 .navbar{
-  display: flex;
+  display: inline-flex;
   background-color: #F5F5F5;
   padding: 25px;
   font-size:large;
   font-weight: bold;
   border-bottom: 2px solid #EB311F;
+  width: 100%;
+  height: 3vh;
 }
 
 .lista{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 8em;
+  margin-left: 10vh;
 }
 
 .navbar a{
   color: black;
-  margin-right: 6em;
+  margin-right: 8vh;
   text-decoration:none;
   transition: .3s;
 }
@@ -25,18 +27,9 @@
   color: rgb(219, 84, 84);
 }
 
-.listaButtons{
-  display: flex;
-  margin-left: 24vw;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .listButton{
-  margin-left: 16vw;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   transform: translate(-0%, -0%);
 }
@@ -51,7 +44,7 @@
   color: #EB311F;
   font-size: large;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
   background: transparent;
   transition: all .35s;
   font-weight:bold ;
@@ -92,4 +85,10 @@
 
 .ajuste{
   margin-left: 2vw;
+}
+
+@media(max-width: 500px){
+  .navbar a{
+    border-bottom: aqua;
+  }
 }

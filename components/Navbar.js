@@ -10,7 +10,6 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.lista}>
-
         <Link href="/">
           <a>Home</a>
         </Link>
