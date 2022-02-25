@@ -14,7 +14,7 @@ export default function Navbar() {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/produtos">
+        <Link href="/products/product">
           <a>Produtos</a>
         </Link>
         <Link href="/carrinho">

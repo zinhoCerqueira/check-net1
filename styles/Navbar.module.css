@@ -5,7 +5,7 @@
   font-size:large;
   font-weight: bold;
   border-bottom: 2px solid #EB311F;
-  height: 3vh;
+  height: 5vh;
 }
 
 .lista{
@@ -14,7 +14,6 @@
   align-items: center;
   margin-left: 8vh;
   width: 45%;
-  border: 1px solid aqua;
 }
 
 .navbar a{
@@ -33,7 +32,6 @@
   justify-content: flex-end;
   align-items: center;
   transform: translate(-0%, -0%);
-  border: 1px solid aqua;
   width: 60%;
   max-width: 980px;
 }
@@ -92,7 +90,19 @@
 }
 
 @media(max-width: 500px){
-  .navbar a{
-    border-bottom: aqua;
+
+  
+  .navbar{
+    width: 100%;
+  }
+
+  .lista{
+    display: none;
+  }
+
+  .listButton{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
   }
 }

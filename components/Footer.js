@@ -37,12 +37,15 @@ export default function Footer() {
             Fale conosco
           </h2>
           <h5>
+            <i class="fa-solid fa-location-crosshairs"></i>&nbsp;
             Av. Transnordestina, s/n - Feira de Santana, Novo Horizonte - BA, 44036-900
           </h5>
           <h5>
+            <i class="fa-solid fa-phone"></i>&nbsp;
             (55) 75 3490-0020
           </h5>
           <h5>
+            <i class="fa-solid fa-envelope"></i>&nbsp;
             checknetservices@checknet.com
           </h5>
         </div>

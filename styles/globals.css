@@ -10,3 +10,9 @@ html{
   font-size: 62.5%;
 }
 
+@media(max-width: 500px){
+
+  *{
+  font-size : 1.0rem;
+  }
+}

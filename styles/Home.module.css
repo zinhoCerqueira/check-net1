@@ -1,6 +1,8 @@
 .container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 43vh;
 }
 
 .divPresent1{ 
@@ -83,8 +85,9 @@
 
 .pessoaNome{
   color: #EB311F;
+  font-size: 1.6rem;
   font-weight: bold;
-  margin-top: 3vh;
+  margin-top: 1.8rem;
 }
 
 .pessoaCargo{
@@ -147,4 +150,24 @@
 .styleButton:hover:before,
 .styleButton:hover:after{
   top:0;
+}
+
+@media(max-width: 450px){
+  .divPresent1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .divPresent2 {
+    display :none;
+  }
+
+  .present3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

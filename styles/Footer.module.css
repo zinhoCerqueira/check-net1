@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   border-top: 2px solid #EB311F;
-
 }
 
 .footerDiv1{
@@ -15,10 +14,12 @@
 
 .footerDiv1 h2{
   color: #EB311F;
+  font-size: 2.8rem;
 }
 
 .footerDiv1 h5{
   color: black;
+  font-size: 1.5rem;
 }
 
 
@@ -27,12 +28,18 @@
   width: 50%;
 }
 
+.footerDiv1 h3{
+  font-size: 1.5rem;
+}
+
 .footerDiv2 h2{
   color: #EB311F;
+  font-size: 2.8rem;
 }
 
 .footerDiv2 h5{
   color: black;
+  font-size: 1.5rem;
 }
 
 .footerDivSpace{
