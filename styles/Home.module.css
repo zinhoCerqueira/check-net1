@@ -152,19 +152,18 @@
 
 @media(max-width: 450px){
 
-  .container{
+  .container  {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid violet;
+    height: auto;
   }
 
   .divPresent1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
-    border: 1px solid aqua;
+    margin: 2rem 2rem;
   }
 
   .divPresent2 {

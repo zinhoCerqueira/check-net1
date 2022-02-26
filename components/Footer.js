@@ -22,10 +22,10 @@ export default function Footer() {
           <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></Script>
 
           <h5>
-            Copywright 2022, by Checknet,
+            Copyright 2022, by <br></br>Checknet,
           </h5>
           <h5>
-            Inc,All rights reserved
+            Inc, All rights reserved
           </h5>
         </div>
 
@@ -37,11 +37,31 @@ export default function Footer() {
           <div className={styles.footerDiv2CellPhone}>
             <h2>
               Fale conosco
-            </h2><br></br>
-            
-            <i className="fa-solid fa-location-crosshairs"></i>
-            <i className="fa-solid fa-phone"></i>
-            <i className="fa-solid fa-envelope"></i>&nbsp;
+            </h2>
+            <div className={styles.iconsCellPhone}>
+              <h3>
+                <i className="fa-solid fa-location-crosshairs"></i>
+              </h3>
+              <h3>
+                <i className="fa-solid fa-phone"></i>
+              </h3>
+              <h3>
+                <i className="fa-solid fa-envelope"></i>
+              </h3>
+            </div>
+
+            <div className={styles.iconsCellPhone}>
+              <h3>
+                <i className="fab fa-facebook"></i>
+              </h3>
+              <h3>
+                <i className="fa-brands fa-instagram"></i>
+              </h3>
+              <h3>
+                <i className="fa-brands fa-twitter"></i>
+              </h3>
+            </div>
+
           </div>
 
           <div className={styles.footerDiv2PC}>
