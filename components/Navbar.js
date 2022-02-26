@@ -10,6 +10,12 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
 
+      <div className={styles.iconsMenu}>
+        <h5>
+          <i className="fa-solid fa-bars"></i>
+        </h5>
+      </div>
+
       <div className={styles.lista}>
         <Link href="/">
           <a>Home</a>
@@ -26,7 +32,7 @@ export default function Navbar() {
       </div>
 
       <div className={styles.listButton}>
-        <button onClick={handleShow}>Login</button>
+        <button>Login</button>
         <Link href="/cadastro">
           <button className={styles.ajuste}>Cadastre-se</button>
         </Link>

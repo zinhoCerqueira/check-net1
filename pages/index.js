@@ -39,7 +39,7 @@ export default function Home() {
           <button className={styles.styleButton}>
             <i className="fa-solid fa-magnifying-glass"></i> &nbsp;
             Nossos produtos
-          </button>
+          </button> 
         </div>
 
 

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   border-top: 2px solid #EB311F;
+  width: 100%;
 }
 
 .footerDiv1{
@@ -51,4 +52,19 @@
   flex-direction: row;
   justify-content: space-around;
   width: 10vh;
+}
+
+.footerDiv2CellPhone{
+  display: none;
+}
+
+@media(max-width: 450px){
+  .footerDiv2CellPhone{
+    display: flex;
+  }
+
+  .footerDiv2PC{
+    display: none;
+  }
+
 }

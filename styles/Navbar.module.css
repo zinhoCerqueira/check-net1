@@ -89,11 +89,29 @@
   margin-left: 2vw;
 }
 
+.iconsMenu{
+  display: none;
+}
+
+
+/* CSS DO MOBILE*/
 @media(max-width: 500px){
 
   
   .navbar{
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .iconsMenu{
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+  }
+
+  .iconsMenu h5{
+    font-size: 2.2rem;
   }
 
   .lista{
@@ -103,6 +121,8 @@
   .listButton{
     display: flex;
     justify-content: flex-end;
-    margin-left: 0;
+    width: 80%;
   }
+
+ 
 }
