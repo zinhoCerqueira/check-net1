@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
+  text-align: end;
 }
 
 .footerDiv1 h2{

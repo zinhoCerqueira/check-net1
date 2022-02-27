@@ -1,4 +1,4 @@
-
+import Modal from './Modal';
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
 
@@ -30,6 +30,8 @@ export default function Navbar() {
           <a>Sobre</a>
         </Link>
       </div>
+
+      <Modal/>
 
       <div className={styles.listButton}>
         <button>Login</button>

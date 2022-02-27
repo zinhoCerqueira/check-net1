@@ -22,7 +22,7 @@ export default function Footer() {
           <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></Script>
 
           <h5>
-            Copyright 2022, by <br></br>Checknet,
+            Copyright 2022, by Checknet,
           </h5>
           <h5>
             Inc, All rights reserved
@@ -58,7 +58,7 @@ export default function Footer() {
                 <i className="fa-brands fa-instagram"></i>
               </h3>
               <h3>
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter" ></i>
               </h3>
             </div>
 
