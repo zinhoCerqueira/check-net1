@@ -1,9 +1,13 @@
-import Modal from './Modal';
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
 
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -31,14 +35,30 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <Modal/>
 
       <div className={styles.listButton}>
-        <button>Login</button>
+
+        <button onClick={handleShow}>Login</button>
         <Link href="/cadastro">
           <button className={styles.ajuste}>Cadastre-se</button>
         </Link>
+
       </div>
+      
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
 
     </div>
