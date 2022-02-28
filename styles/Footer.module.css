@@ -17,31 +17,37 @@
 .footerDiv1 h2{
   color: #EB311F;
   font-size: 2.8rem;
+  font-weight: bold;
 }
 
 .footerDiv1 h5{
   color: black;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.footerDiv1 h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 .footerDiv2{
   justify-content: flex-start;
   width: 50%;
 }
 
-.footerDiv1 h3{
-  font-size: 1.5rem;
-}
+
 
 .footerDiv2 h2{
   color: #EB311F;
   font-size: 2.8rem;
+  font-weight: bold;
 }
 
 .footerDiv2 h5{
   color: black;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .footerDivSpace{

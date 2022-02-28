@@ -34,6 +34,8 @@
 }
 
 .control{
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
   width: 280px;
   height: 40px;
   text-align: center;
@@ -47,14 +49,16 @@
 }
 
 .label{
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
 
 .checkBox{
+  margin-top: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 1vh;
   margin-bottom: 1vh;
 }
 

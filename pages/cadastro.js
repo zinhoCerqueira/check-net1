@@ -3,6 +3,7 @@ import styles from "../styles/Cadastro.module.css"
 import Form from 'react-bootstrap/Form'
 
 export default function Cadastro() {
+
   return (
     <>
       <Navbar />
@@ -14,7 +15,7 @@ export default function Cadastro() {
             <Form.Group className={styles.form}>
               
               <Form.Label className={styles.label}>Nome</Form.Label>
-              <Form.Control className={styles.control} type="default" placeholder="Seu nome" />
+              <Form.Control controlId = 'nome' className={styles.control} type="default" placeholder="Seu nome" />
               
               <Form.Label className={styles.label}>Email</Form.Label>
               <Form.Control className={styles.control} type="email" placeholder="Seu e-mail" />
@@ -33,7 +34,7 @@ export default function Cadastro() {
             </Form.Group>
           </Form>
 
-          <button>Cadastre-se</button>
+          <button type='submit'>Cadastre-se</button>
 
         </div>
       </div>

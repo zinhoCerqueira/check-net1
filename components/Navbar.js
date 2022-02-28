@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import { useState } from 'react'
+import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
@@ -44,19 +45,33 @@ export default function Navbar() {
         </Link>
 
       </div>
-      
+
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Header className={styles.modalHeader} closeButton>
+          <Modal.Title><span className={styles.modalLogo}>RangoCheck</span></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+
+          <Form>
+            <Form.Group className={styles.modalForm}>
+
+              <Form.Label className={styles.modalLabel}>Email</Form.Label>
+              <Form.Control className={styles.modalControl} type="email" placeholder="Seu e-mail" />
+
+              <Form.Label className={styles.modalLabel}>Senha</Form.Label>
+              <Form.Control className={styles.modalControl} type="password" placeholder="Senha" />
+
+            </Form.Group>
+          </Form>
+
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+          <button className={styles.modalButtons} onClick={handleClose}>
+            Login
+          </button>
+          <button className={styles.modalButtons} onClick={handleClose}>
+            Voltar
+          </button>
         </Modal.Footer>
       </Modal>
 
